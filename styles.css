@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@300;400;600;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@300;400;600;900&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html,
+body {
+ min-height: 100%;
+
+}
+
+body {
+ height: 100vh;
+ overflow: hidden;
+ font-family: 'Roboto', Courier, monospace;
+}
+
+.main-container {
+ max-width: 1440px;
+ min-height: 100%;
+
+ margin: 0 auto;
+
+
+}
+
+
+.boja {
+ background-color: rgb(13, 18, 18);
+}
+
+.boja2 {
+ background-color: #FFDDBD;
+}
+
+.header-container {
+ height: 18vh;
+ display: flex;
+ justify-content: space-between;
+
+
+
+}
+
+.logo {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+
+.logo h1 {
+ font-size: 1rem;
+ color: #E9EDF7;
+}
+
+ul {
+ list-style: none;
+}
+
+a {
+ text-decoration: none;
+ color: #E9EDF7;
+ font-weight: 400;
+}
+
+nav ul {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+
+nav ul li {
+ padding: 10px;
+}
+
+nav ul li a:hover {
+ color: #ed9e00;
+ transition: 0.3s ease;
+
+}
+
+nav {
+ margin: auto 0;
+}
+
+.main-section {
+
+ height: 82vh;
+ overflow-y: hidden;
+ display: flex;
+ justify-content: space-between;
+ gap: 2em;
+ align-items: center;
+ background-image: url(./img/bg-tablet-pattern.svg);
+ background-position: center;
+ background-blend-mode: overlay;
+ background-repeat: no-repeat;
+
+}
+
+
+
+#illustration-img {
+ width: 100%;
+ max-width: 600px;
+ max-height: 80vh;
+
+ overflow-y: hidden;
+}
+
+.container {
+ max-width: 1300px;
+ margin: 0 auto;
+ overflow: auto;
+ padding: 0 40px;
+}
+
+.naslov h1 {
+ color: #362E94;
+ font-weight: 900;
+ margin-bottom: 20px;
+ font-size: 3rem;
+}
+
+.naslov p {
+ font-weight: 400;
+ font-size: 1.3rem;
+
+}
+
+.btn {
+ margin-top: 40px;
+ box-shadow: 1px 1px 7px -1px #362e94;
+ background-color: #ed9e00;
+ border-radius: 35px;
+ border: 1px solid #ffffff;
+ display: inline-block;
+ cursor: pointer;
+ color: #ffffff;
+ font-family: Arial;
+ font-size: 21px;
+ padding: 15px 40px;
+ text-decoration: none;
+ transition: 0.3s ease;
+}
+
+.btn:hover {
+ background-color: #ffc861;
+}
+
+.btn:active {
+ position: relative;
+ top: 1px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+ .naslov h1 {
+  font-size: 2.4rem;
+ }
+
+ .naslov p {
+  font-size: 1.3rem;
+
+ }
+}
+
+@media screen and (max-width:767px) {
+
+
+ .main-section {
+  flex-direction: column-reverse;
+  justify-content: center;
+ }
+
+ .ilustracija {
+  margin-top: -100px;
+  margin-bottom: -30px;
+  width: 65vw;
+ }
+
+ .naslov h1 {
+  font-size: 2rem;
+  text-align: center;
+ }
+
+ .naslov p {
+  font-size: 1.1rem;
+  text-align: center;
+ }
+
+ .naslov {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+ nav {
+  display: none;
+ }
+
+ .main-section {
+
+
+  background-image: url(./img/bg-tablet-pattern.svg);
+  background-position: bottom left;
+  background-repeat: repeat;
+ }
+
+ .logo {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+
+ }
+
+ .logo h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #f1ac21;
+  font-family: 'Poppins', Courier, monospace;
+  letter-spacing: 2px;
+ }
+}
